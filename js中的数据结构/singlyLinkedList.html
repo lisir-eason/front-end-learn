@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>单链表</title>
+</head>
+<body>
+  <script>
+    //  实现
+    // Node 类用来表示节点。
+    // LinkedList 类提供插入节点、删除节点等一些操作。
+
+    //  单向链表的八种常用操作：
+    // append(element)：尾部添加元素。
+    // insert(position, element)：特定位置插入一个新的项。
+    // removeAt(position)：特定位置移除一项。
+    // remove(element)：移除一项。
+    // indexOf(element)：返回元素在链表中的索引。如果链表中没有该元素则返回 -1。
+    // isEmpty()：如果链表中不包含任何元素，返回 true，如果链表长度大于 0，返回 false。
+    // size()：返回链表包含的元素个数，与数组的 length 属性类似。
+    // getHead()：返回链表的第一个元素。
+    // toString()：由于链表使用了 Node 类，就需要重写继承自 JavaScript 对象默认的 toString() 方法，让其只输出元素的值。
+    // print()：打印链表的所有元素。
+    
+    //Node类
+    function Node(element) {
+      this.element = element  //当前节点内容
+      this.next = null        //下一个节点的链接
+    }
+
+    //链表类
+    function LinkedList() {
+      this.head = new Node('head')
+      this.find = find
+      this.insert = insert
+      this.remove = remove
+      this.findPrevious = findPrevious
+      this.display = display
+    }
+
+    //find 查找指定的节点
+    function find(item) {
+      var currentNode = this.head
+      while (currentNode.element != item) {
+        currentNode = currentNode.next
+      }
+      return currentNode
+    }
+
+    //insert 插入
+    function insert(newElement, item) {
+      var newNode = new Node(newElement)
+      var currentNode = this.find(item)
+      newNode.next = currentNode.next
+      currentNode.next = newNode
+    }
+
+    // display 显示链表
+    function display() {
+      var currentNode = this.head
+      while (currentNode.next !== null) {
+        console.log(currentNode.next.element)
+        currentNode = currentNode.next
+      }
+    }
+
+    //remove 删除  原理是将要删除的元素的上一个节点的next指向要删除元素的下一个节点，有点
+    //绕过当前节点的意思 因此要先创建一个findPrevious方法
+    function findPrevious(item) {
+      var currentNode = this.head
+      while (currentNode.next.element != item && currentNode.next !== null) {
+        currentNode = currentNode.next
+      }
+      return currentNode
+    }
+    function remove(item) {
+      var preNode = this.findPrevious(item)
+      if (preNode.next !== null) {
+        preNode.next = preNode.next.next
+      }
+    }
+
+    // 验证下
+    var fruits = new LinkedList()
+
+    fruits.insert('Apple', 'head')
+    fruits.insert('Banana', 'Apple')
+    fruits.insert('Pear', 'Banana')
+    fruits.insert('Grape' , 'Pear')
+
+    fruits.display()
+
+    fruits.remove('Banana')
+    fruits.display()
+
+  </script>
+</body>
+</html>
