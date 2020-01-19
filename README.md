@@ -6,16 +6,40 @@
 
 没事，问题不大，先给自己定个小目标，万一实现了呢？？？
 
-### 技术栈
+### 2020要学习的内容
 
-* JavaScript
-* React Native
-* Electron
-* Css3
-* Html5
-* ...
+> JavaScript设计模式
+
+待学习...
+
+> JavaScript数据结构与算法
+
+待学习...
+
+> ReactNative
+
+待学习...
+
+> Css3
+
+待学习...
+
+> React源码解析
+
+待学习...
+
+> Flutter
+
+待学习...
+
+> Typescript
+
+待学习...
+
+> Electron
+
+待学习...
 
 前端东西好像真的是太多了 我丢
 
 ![](http://ww4.sinaimg.cn/bmiddle/9150e4e5gy1fumb4aw63bg207x07xt8w.gif)
-
