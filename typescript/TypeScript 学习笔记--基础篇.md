@@ -1,4 +1,4 @@
-# TypeScript 学习笔记
+# TypeScript 学习笔记 -- 基础篇
 
 本文是作者在学习TypeScript 时的学习笔记，重在一些基础概念，一些前端工程师可能不太了解的概念，比如接口（Interfaces）、泛型（Generics）、类（Classes）、枚举类型（Enums）等。希望以后在使用TypeScript 可以回顾以前所学
 
