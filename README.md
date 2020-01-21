@@ -34,7 +34,7 @@
 
 > TypeScript 
 
-[TypeScript 学习笔记  ----  基础篇](https://github.com/lisir-eason/front-end-learn/blob/master/typescript/typescript%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+[TypeScript 学习笔记  ----  基础篇](https://github.com/lisir-eason/front-end-learn/blob/master/typescript/TypeScript%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0--%E5%9F%BA%E7%A1%80%E7%AF%87.md)
 
 > Electron
 

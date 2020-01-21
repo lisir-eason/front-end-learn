@@ -154,3 +154,80 @@ function sum() {
 ```
 
 ### 函数类型
+
+```typescript
+//ts中定义函数，不仅有输入也要限制输出
+function sum(x: number, y: number): number {
+  return x + y;
+}
+//也可以用函数表达式定义
+let sum = function (x: number, y: number): number {
+  return x + y;
+}
+//用接口定义函数
+interface SearchFunc {
+  (source: string, subString: string) : boolean;
+}
+let mySearch: SearchFunc;
+mySearch = function(source: string, subString: string) {
+  return source.search(subString) !== -1;
+}
+```
+
+> 可选参数：可选参数必须接在必需参数后面。换句话说，**可选参数后面不允许再出现必需参数了**
+
+```typescript
+//z为可选参数 x为参数默认值，一旦有默认值，该参数就被识别为可选参数，并且不受后面不能出现必选参数的限制
+function sum(x: number = 1, y: number, z?: number): number {
+  return x + y;
+}
+```
+
+> 剩余参数：与ES6相似，其实是一个数组items，用数组约束即可
+
+```typescript
+function push(array: any[], ...items: any[]): void {
+  items.forEach(function(item) {
+    array.push(item);
+  })
+}
+
+let a = [];
+push(a, 1, 2, 3);
+```
+
+### 类型断言
+
+类型断言（Type Assertion）可以用来手动指定一个值的类型。
+
+```typescript
+<类型>值
+//或者
+值 as 类型
+```
+
+看一个例子：
+
+```typescript
+//上面提到过，这样会报错，因为不知道something的类型
+function getLength(something: string | number): number {
+  return something.length;
+}
+//但是有时候我们确实需要去访问参数的属性，比如
+function getLength(someting: string | number): number {
+  if (something.length) {
+    return someting.length;
+  } else {
+    return someting.toString().length;
+  }
+}
+//这样会报错，所以我们需要使用类型断言，将someting断言成string这样就不会报错：
+function getLength(someting: string | number): number {
+  if (<string>something.length) {
+    return <string>someting.length;
+  } else {
+    return someting.toString().length;
+  }
+}
+```
+
