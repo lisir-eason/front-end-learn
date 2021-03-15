@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Jquery</title>
+</head>
+<body>
+  <script>
+    //组合模式 实现一个对象
+    var Person = function(name) {   
+      this.name = name
+      this.sayName =function () {
+        console.log('我的名字是 ' + this.name)
+      }
+    }
+
+    Person.prototype = {
+      constructor: Person,
+      age: 10,
+      sayAge: function () {
+        console.log('我的年龄是 ' + this.age)
+      }
+    }
+
+    var tony = new Person('tony')
+
+    tony.sayName()
+    tony.sayAge()
+
+
+  </script>
+</body>
+</html>
