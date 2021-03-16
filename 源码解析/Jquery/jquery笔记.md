@@ -36,13 +36,19 @@ tony.sayAge()  //我的年龄是 10
 ```javascript
 
 jQuery = function( selector, context ) {
-    // 这里返回jQuery.fn.init
-    return new jQuery.fn.init( selector, context );
+    // 这里返回jQuery.fn.init ==> 这个方法返回了this，其实也就是jQuery.fn或者说是jQuery.prototype
+    return new jQuery.fn.init( selector, context );  //new jQuery.prototype()
 };
 
 init = jQuery.fn.init = function( selector, context, root ) {
     ...
-    return this.constructor( context ).find( selector );
+    elem = document.getElementById( match[ 2 ] );  //处理id的情况
+    if ( elem ) {
+        // Inject the element directly into the jQuery object
+        this[ 0 ] = elem;
+        this.length = 1;
+    }
+    return this;
 }
 
 jQuery.fn = jQuery.prototype = {

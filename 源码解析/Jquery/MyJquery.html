@@ -7,29 +7,29 @@
   <title>My Jquery</title>
 </head>
 <body>
-  <script>
-    //组合模式 实现一个对象
-    var Person = function(name) {   
-      this.name = name
-      this.sayName =function () {
-        console.log('我的名字是 ' + this.name)
-      }
-    }
+<script>
+//组合模式 实现一个对象
+var Person = function(name) {   
+  this.name = name
+  this.sayName =function () {
+    console.log('我的名字是 ' + this.name)
+  }
+}
 
-    Person.prototype = {
-      constructor: Person,
-      age: 10,
-      sayAge: function () {
-        console.log('我的年龄是 ' + this.age)
-      }
-    }
+Person.prototype = {
+  constructor: Person,
+  age: 10,
+  sayAge: function () {
+    console.log('我的年龄是 ' + this.age)
+  }
+}
 
-    var tony = new Person('tony')
+var tony = new Person('tony')
 
-    tony.sayName()
-    tony.sayAge()
+tony.sayName()  //我的名字是 tony
+tony.sayAge()  //我的年龄是 10
 
 
-  </script>
+</script>
 </body>
 </html>
