@@ -42,8 +42,9 @@
 待学习...
 
 > 源码
->
-> jquery源码
+
+1. [Jquery源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Jquery/jquery%E7%AC%94%E8%AE%B0.md)
+2. [Underscore源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Underscore/underscore%E7%AC%94%E8%AE%B0.md)
 
 前端东西好像真的是太多了 我丢
 
