@@ -5,24 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="./underscore.js"></script>
+  <!-- <script src="./underscore.js"></script> -->
+  <script src="./MyUnderscore.js"></script>
 </head>
 <body>
   <script>
-    _.map([1, 2, 3], function(num){ return num * 3; });
-    // //立即执行函数，保护全局变量不被污染
-    // (function (global, factory) {
-    //   //对CommonJS的支持，即module.exports，适用于Nodejs
-    //   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    //   //对AMD的支持，例如RequireJS
-    //   typeof define === 'function' && define.amd ? define('underscore', factory) :
-    //   (global = global || self, (function () {
-    //     var current = global._;
-    //     //在浏览器中，这里的global就是window对象，所以可以全局使用 ‘_’
-    //     var exports = global._ = factory();
-    //     exports.noConflict = function () { global._ = current; return exports; };
-    //   }()));
-    // })(this, function () {});
+    var arr = [1, 3, 4];
+    // var result1 = _.filter(arr, function (item) {
+    //   return item > 2
+    // }) 
+
+    var result2 =  _.chain(arr)
+      .each((key, item) => item * 2)
+      .filter(item => item > 5)
+      .value()
+
+    // console.log(result1)
+    console.log(result2)
   </script>
 </body>
 </html>
