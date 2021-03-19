@@ -1,0 +1,6 @@
+var a = 1;
+var c = 3;
+var string = '==';
+
+console.log(a == b);
+console.log(node == iji);

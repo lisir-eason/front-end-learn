@@ -10,13 +10,10 @@
 <script>
 //组合模式 实现一个对象
 var Person = function(name) {   
-  this.name = name
-  this.sayName =function () {
-    console.log('我的名字是 ' + this.name)
-  }
+  return new Person.fn.init(name)
 }
 
-Person.prototype = {
+Person.fn = Person.prototype = {
   constructor: Person,
   age: 10,
   sayAge: function () {
@@ -24,10 +21,19 @@ Person.prototype = {
   }
 }
 
-var tony = new Person('tony')
+Person.fn.init = function (name) {
+  this.name = name
+  this.sayName =function () {
+    console.log('我的名字是 ' + this.name)
+  }
+  return this
+}
 
-tony.sayName()  //我的名字是 tony
-tony.sayAge()  //我的年龄是 10
+console.log(Person('tony'))
+
+Person.fn.init.prototype = Person.fn
+
+Person('tony').sayAge()
 
 
 </script>
