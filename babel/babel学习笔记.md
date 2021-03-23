@@ -59,7 +59,7 @@ npm install --save @babel/polyfill
 也可以使用运行器npx：
 
 ```shell
-npm babel src --out-dir lib
+npx babel src --out-dir lib
 ```
 
 至此最基本的babel项目环境已经搭建完成，babel的其它配置可以参考[官方文档](https://www.babeljs.cn/docs/configuration)。
@@ -123,3 +123,159 @@ OK，从上面的树中基本上可以看到，这是一个声明变量的语句
 
 我们试着编写一个插件，目标是将js文件中的双等“==”转换成全等“===”。参照官方[babel插件说明书](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#babel-plugin-handbook)。
 
+首先创建myBabel.js文件，写入基本配置：
+
+```javascript
+var t = require('@babel/types');
+
+const visitor = {
+  BinaryExpression(path, state){
+	//按照官方文档，这个方法会遍历所有的BinaryExpression，参数path是匹配到的node，state是下面的配置文件传来的配置
+  }
+}
+ 
+module.exports = function () {
+  return {
+    visitor,
+  }
+}
+```
+
+在babel.config.json文件中引入我们的plugin：
+
+```json
+{
+    "plugins": [
+        ["./myBabel.js", {    //这里使用相对路径引入plugin文件
+          "opt1": true       //这里的第二个参数是配置项，其数据传给上面的state
+        }]
+    ]
+}
+```
+
+这样我们的基本配置就做好了，那么如何写我们要求的插件呢？首先我们使用[AST在线转换](https://astexplorer.net/)查看代码转换前后的AST有什么不同，这里我们使用"a == b;"语句，转换成“a === b;”作为例子；
+
+"a == b;"解析成AST是这样的:
+
+```json
+{
+  "type": "Program",
+  "start": 0,
+  "end": 7,
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "start": 0,
+      "end": 7,
+      "expression": {
+        "type": "BinaryExpression",
+        "start": 0,
+        "end": 6,
+        "left": {
+          "type": "Identifier",
+          "start": 0,
+          "end": 1,
+          "name": "a"
+        },
+        "operator": "==",
+        "right": {
+          "type": "Identifier",
+          "start": 5,
+          "end": 6,
+          "name": "b"
+        }
+      }
+    }
+  ],
+  "sourceType": "module"
+}
+```
+
+“a === b;”转换成AST是这样的：
+
+```json
+{
+  "type": "Program",
+  "start": 0,
+  "end": 8,
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "start": 0,
+      "end": 8,
+      "expression": {
+        "type": "BinaryExpression",
+        "start": 0,
+        "end": 7,
+        "left": {
+          "type": "Identifier",
+          "start": 0,
+          "end": 1,
+          "name": "a"
+        },
+        "operator": "===",
+        "right": {
+          "type": "Identifier",
+          "start": 6,
+          "end": 7,
+          "name": "b"
+        }
+      }
+    }
+  ],
+  "sourceType": "module"
+}
+```
+
+然后通过[JSON在线对比](https://www.sojson.com/jsondiff.html)，发现这两者的主要区别（忽略掉因长度改变引起的end的值改变）是"operator"不同，一个是“==”一个是“===”，于是我们继续完成myBabel.js文件，就有了下面的代码：
+
+```javascript
+var t = require('@babel/types');
+
+const visitor = {
+  BinaryExpression(path, state){
+	if (path.node.operator == '==') {
+      var leftIdentifier = path.node.left.name;
+      var rightIdentifier = path.node.right.name;
+      var now_node = 
+          t.BinaryExpression('===', t.identifier(leftIdentifier),t.identifier(rightIdentifier));
+      path.replaceWith(now_node);
+    }
+  }
+}
+ 
+module.exports = function () {
+  return {
+    visitor,
+  }
+}
+```
+
+我们试着随便写个index.js文件：
+
+```javascript
+var a = 1;
+var c = 3;
+var string = '==';
+
+console.log(a == b);
+```
+
+执行命令行：
+
+```shell
+npx babel src --out-dir lib
+```
+
+在src目录下得到index.js文件:
+
+```js
+"use strict";
+
+var b = 1;
+var c = 3;
+var string = '==';
+console.log(a === b);
+```
+
+完结撒花！
