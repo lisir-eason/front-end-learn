@@ -1,12 +1,12 @@
-# 2020年学习目标
+# 2021年学习目标
 
-突然发现2020年已经悄然而至，当你还在为过年吃什么而发愁的时候，你会突然发现
+突然发现2021年已经悄然而至，当你还在为过年吃什么而发愁的时候，你会突然发现
 
 ![又要上班了](http://ww4.sinaimg.cn/bmiddle/6af89bc8gw1f8r8dfjpgbj20640640sv.jpg)
 
 没事，问题不大，先给自己定个小目标，万一实现了呢？？？
 
-### 2020要学习的内容
+### 2021要学习的内容
 
 > JavaScript设计模式
 
@@ -45,6 +45,10 @@
 
 1. [Jquery源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Jquery/jquery%E7%AC%94%E8%AE%B0.md)
 2. [Underscore源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Underscore/underscore%E7%AC%94%E8%AE%B0.md)
+
+> 工程管理
+
+1. [babel学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/babel/babel%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
 前端东西好像真的是太多了 我丢
 
