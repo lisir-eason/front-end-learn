@@ -1,1 +1,4 @@
 /babel/node_modules
+/nodejs/express/node_modules
+/nodejs/express-generator/myapp/node_modules
+/nodejs/learn-and-test/node_modules
