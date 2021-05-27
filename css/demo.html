@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      /* transition: width 1s; */
+      /* transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    }
+    .container:hover {
+      width: 400px;
+      animation: donghua 1s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes donghua {
+      10%{
+        height: 200px;
+      }
+      50%{
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>header</header>
+  <nav>nav</nav>
+  <section>section</section>
+  <div class="container">
+
+  </div>
+  <footer>footer</footer>
+</body>
+</html>
