@@ -169,3 +169,29 @@ mixin代码复用:
 }
 ```
 
+extend:
+
+```less
+.block{
+    width: 100px;
+    font-size: 14px;
+}
+
+.nav:extend(.block){
+    
+}
+
+.nav{
+    &:extend(.block);
+}
+```
+
+**extend和mixin在目的上是一样的，都是为了css层面的复用，但是编译出来的结果不一样。**
+
+模块化管理，使用import:
+
+```less
+@import './variable';
+@import './color'
+```
+
