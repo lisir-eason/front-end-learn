@@ -26,9 +26,8 @@
 
 > Css3
 
-[css3学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/css/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
-
-[css动画](https://github.com/lisir-eason/front-end-learn/blob/master/css/css%E5%8A%A8%E7%94%BB.md)
+- [css3学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/css/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+- [css动画](https://github.com/lisir-eason/front-end-learn/blob/master/css/css%E5%8A%A8%E7%94%BB.md)
 
 > React源码解析
 
@@ -49,12 +48,12 @@
 
 > 源码
 
-1. [Jquery源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Jquery/jquery%E7%AC%94%E8%AE%B0.md)
-2. [Underscore源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Underscore/underscore%E7%AC%94%E8%AE%B0.md)
+- [Jquery源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Jquery/jquery%E7%AC%94%E8%AE%B0.md)
+- [Underscore源码阅读笔记](https://github.com/lisir-eason/front-end-learn/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90/Underscore/underscore%E7%AC%94%E8%AE%B0.md)
 
 > 工程管理
 
-1. [babel学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/babel/babel%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+- [babel学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/babel/babel%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
 
 前端东西好像真的是太多了 我丢
 

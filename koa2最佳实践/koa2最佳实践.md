@@ -14,7 +14,7 @@ npm run dev
 
 调整项目结构：
 
-![image-20210528203313547](C:\Users\Eason\AppData\Roaming\Typora\typora-user-images\image-20210528203313547.png)
+![image-20210528203313547](https://i.loli.net/2021/06/02/LsPxduH8JKy9TMw.png)
 
 安装项目所需的依赖：
 
