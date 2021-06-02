@@ -18,7 +18,7 @@
 
 > Es6新语法
 
-- [let和const、解构赋值]([front-end-learn/let和const、解构赋值.md at master · lisir-eason/front-end-learn (github.com)](https://github.com/lisir-eason/front-end-learn/blob/master/es6/let和const、解构赋值.md))
+- [let和const、解构赋值](https://github.com/lisir-eason/front-end-learn/blob/master/es6/let%E5%92%8Cconst%E3%80%81%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC.md)
 - [字符串、数值、函数扩展](https://github.com/lisir-eason/front-end-learn/blob/master/es6/%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E6%95%B0%E5%80%BC%E3%80%81%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95.md)
 
 > ReactNative
