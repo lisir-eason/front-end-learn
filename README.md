@@ -18,7 +18,8 @@
 
 > Es6新语法
 
-待学习...
+- [let和const、解构赋值]([front-end-learn/let和const、解构赋值.md at master · lisir-eason/front-end-learn (github.com)](https://github.com/lisir-eason/front-end-learn/blob/master/es6/let和const、解构赋值.md))
+- [字符串、数值、函数扩展](https://github.com/lisir-eason/front-end-learn/blob/master/es6/%E5%AD%97%E7%AC%A6%E4%B8%B2%E3%80%81%E6%95%B0%E5%80%BC%E3%80%81%E5%87%BD%E6%95%B0%E6%89%A9%E5%B1%95.md)
 
 > ReactNative
 
@@ -54,6 +55,10 @@
 > 工程管理
 
 - [babel学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/babel/babel%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+
+> Nodejs/koa2
+
+- [koa2最佳实践](https://github.com/lisir-eason/front-end-learn/blob/master/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md)
 
 前端东西好像真的是太多了 我丢
 
