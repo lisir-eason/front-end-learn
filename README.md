@@ -60,6 +60,8 @@
 
 - [koa2最佳实践](https://github.com/lisir-eason/front-end-learn/blob/master/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5.md)
 - [跨域解决方案](https://github.com/lisir-eason/front-end-learn/blob/master/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/%E8%A7%A3%E5%86%B3%E8%B7%A8%E8%B6%8A%E9%97%AE%E9%A2%98.md)
+- [Nginx配置]([front-end-learn/nginx配置.md at master · lisir-eason/front-end-learn (github.com)](https://github.com/lisir-eason/front-end-learn/blob/master/koa2最佳实践/nginx配置.md))
+- [前端打包优化](https://github.com/lisir-eason/front-end-learn/blob/master/koa2%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E4%B9%8B%E5%89%8D%E7%AB%AF%E6%89%93%E5%8C%85.md)
 
 前端东西好像真的是太多了 我丢
 
