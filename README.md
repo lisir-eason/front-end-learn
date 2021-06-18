@@ -10,11 +10,21 @@
 
 > JavaScript设计模式
 
-待学习...
+- [单例模式](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
+- [策略模式](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)
 
 > JavaScript数据结构与算法
 
-待学习...
+- [使用antd的tree组件画树形结构](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/%E4%BD%BF%E7%94%A8antd%E7%9A%84tree%E7%BB%84%E4%BB%B6%E7%94%BB%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84%EF%BC%88%E9%87%8D%E7%82%B9%E5%9C%A8%E4%BA%8E%E6%95%B0%E6%8D%AE%E7%9A%84%E5%A4%84%E7%90%86%EF%BC%89.md)
+
+> JavaScript高级
+
+- [记录call、apply和bind的区别](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/%E8%AE%B0%E5%BD%95call%E3%80%81apply%E5%92%8Cbing%E7%9A%84%E5%8C%BA%E5%88%AB.md)
+- [JavaScript闭包](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/JavaScript%E9%97%AD%E5%8C%85.md)
+- [JavaScript的原型](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/JavaScript%E7%9A%84%E5%8E%9F%E5%9E%8B.md)
+- [JavaScript对象及其属性和方法](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/JavaScript%E5%AF%B9%E8%B1%A1%E5%8F%8A%E5%85%B6%E5%B1%9E%E6%80%A7%E5%92%8C%E6%96%B9%E6%B3%95.md)
+- [JavaScript中this的用法](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/JavaScript%E4%B8%ADthis%E7%9A%84%E7%94%A8%E6%B3%95.md)
+- [js对字符串的常用操作方法](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/js%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%96%B9%E6%B3%95.md)
 
 > Es6新语法
 
@@ -55,6 +65,7 @@
 > 工程管理
 
 - [babel学习笔记](https://github.com/lisir-eason/front-end-learn/blob/master/babel/babel%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0.md)
+- [vscode中调试webpack构建的项目](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/vscode%E4%B8%AD%E8%B0%83%E8%AF%95webpack%E6%9E%84%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE.md)
 
 > Nodejs/koa2
 
