@@ -19,6 +19,9 @@
 - [数据结构（一）：栈](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E6%A0%88.md)
 - [数据结构（二）：队列](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E9%98%9F%E5%88%97.md)
 - [数据结构（三）：链表](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9A%E9%93%BE%E8%A1%A8.md)
+- [数据结构（四）：集合](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9A%E9%9B%86%E5%90%88.md)
+- [数据结构（五）：字典](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E5%AD%97%E5%85%B8.md)
+- [数据结构（六）：树](https://github.com/lisir-eason/front-end-learn/blob/master/js%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E5%85%AD%EF%BC%89%EF%BC%9A%E6%A0%91.md)
 
 > JavaScript高级
 
