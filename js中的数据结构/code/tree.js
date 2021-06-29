@@ -76,67 +76,66 @@ const bt = {
 }
 
 //先序遍历 根->左->右
-// const preOrder = (root) => {
-//   if (!root) return
-//   console.log(root.val);
-//   preOrder(root.left)
-//   preOrder(root.right)
-// } 
+const preOrder = (root) => {
+  if (!root) return
+  console.log(root.val);
+  preOrder(root.left)
+  preOrder(root.right)
+} 
 
 //非递归版先序遍历
 //思路：利用栈的后进先出原理，先访问当前节点的跟，然后把当前节点的left和right推进栈。
 //由于后进先出，因此先要推入right,循环这个操作，直至栈为空
-// const preOrder1 = (root) => {
-//   if (!root) return
-//   const stack = [root]
-//   while (stack.length > 0) {
-//     const node = stack.pop()
-//     console.log(node.val);
-//     if (node.right) stack.push(node.right)
-//     if (node.left) stack.push(node.left) 
-//   }
-// } 
+const preOrder1 = (root) => {
+  if (!root) return
+  const stack = [root]
+  while (stack.length > 0) {
+    const node = stack.pop()
+    console.log(node.val);
+    if (node.right) stack.push(node.right)
+    if (node.left) stack.push(node.left) 
+  }
+} 
 
 // preOrder1(bt)
 
 //中序遍历 左->根->右
-// const inOrder = (root) => {
-//   if (!root) return
-//   inOrder(root.left)
-//   console.log(root.val);
-//   inOrder(root.right)
-// } 
+const inOrder = (root) => {
+  if (!root) return
+  inOrder(root.left)
+  console.log(root.val);
+  inOrder(root.right)
+} 
 
 // inOrder(bt)
 
 //非递归版中序遍历 
 //思路：先用指针把left全部推入栈中，直到没有left后，弹出当前的（left）节点，并访问它
 //然后指针指向它的右节点，重复上述操作
-// const inOrder1 = (root) => {
-//   if (!root) return
-//   const stack = []
-//   let p = root
-//   while (stack.length || p) {
-//     while (p) {
-//       stack.push(p)
-//       p = p.left
-//     }
-//     const n = stack.pop()
-//     console.log(n.val);
-//     p = n.right
-//   }
- 
-// } 
+const inOrder1 = (root) => {
+  if (!root) return
+  const stack = []
+  let p = root
+  while (stack.length || p) {
+    while (p) {
+      stack.push(p)
+      p = p.left
+    }
+    const n = stack.pop()
+    console.log(n.val);
+    p = n.right
+  }
+} 
 
 // inOrder1(bt)
 
 //后序遍历 左->右->根
-// const postOrder = (root) => {
-//   if (!root) return
-//   postOrder(root.left)
-//   postOrder(root.right)
-//   console.log(root.val);
-// } 
+const postOrder = (root) => {
+  if (!root) return
+  postOrder(root.left)
+  postOrder(root.right)
+  console.log(root.val);
+} 
 
 // postOrder(bt)
 
