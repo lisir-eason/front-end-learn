@@ -8,6 +8,8 @@
 
 ### 2021要学习的内容
 
+欢迎访问[我的博客](http://www.lisireason.xyz/profile/lisir)！
+
 > JavaScript设计模式
 
 - [单例模式](https://github.com/lisir-eason/front-end-learn/blob/master/CSDN/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F.md)
